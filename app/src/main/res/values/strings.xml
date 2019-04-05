@@ -1,0 +1,64 @@
+<resources>
+    //General
+    <string name="company_name">G Turn</string>
+    <string name="app_name">Smart App</string>
+    <string name="app_desc">The Smart Attendance App</string>
+    <string name="website">smartapp.in</string>
+    <string name="email">info@smartapp.in</string>
+
+    //Nav Speech
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+    //Share
+    <string name="share_sub">The new Smart Attendance App</string>
+    <string name="share_body">This is our new Smart Attendance App</string>
+
+    //Settings
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="pref_title_ringtone">Notification Sound</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="default_gallery_storage">My Smart App</string>
+    <string name="title_auto_upload">Auto mark attendance</string>
+    <string name="summary_upload_over_wifi">Mark attendance while in the hall</string>
+    <string name="title_upload_quality">Attendance Criteria</string>
+    <string name="summary_upload_video_quality">Select attendance criteria</string>
+    <string name="pref_title_notifications">Notifications</string>
+    <string name="summary_choose_ringtone">Choose notification sound</string>
+    <string name="pref_header_about">About</string>
+    <string name="summary_about">G-turn Attendance marking application </string>
+    <string name="app_version">1.0</string>
+    <string name="summary_support">Got any queries? We are happy to help!</string>
+    <string name="title_send_feedback">Send Feedback</string>
+    <string name="title_faq">FAQ</string>
+    <string name="summary_faq">View frequently asked questions</string>
+    <string name="url_faq">https://policies.google.com/faq?</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="url_privacy">https://policies.google.com/</string>
+    <string name="title_terms">Terms &amp; Conditions</string>
+    <string name="url_terms">https://policies.google.com/terms</string>
+    <string name="title_version">Version</string>
+    <string name="choose_email_client">Choose email client</string>
+    <string name="title_gallery_storage">Default Storage</string>
+    <string name="title_new_notification_sound">Lecture Remainder</string>
+    <string name="title_vibrate">Vibrate</string>
+    <string name="summary_vibrate">Vibrate on new notification</string>
+    <string name="key_upload_over_wifi">key_upload_over_wifi</string>
+    <string name="key_gallery_name">key_gallery_name</string>
+    <string name="key_upload_quality">key_upload_quality</string>
+    <string name="notifications_new_message">notifications_new_message</string>
+    <string name="key_notifications_new_message_ringtone">key_notifications_new_message_ringtone</string>
+    <string name="key_vibrate">key_vibrate</string>
+    <string name="key_send_feedback">key_send_feedback</string>
+    <string name="start_tag">Time saved is money gained</string>
+    <string name="get_started">Get Started</string>
+    <string name="logon_header">Login to your Account</string>
+    <string name="logon_tag">Experience better convenience</string>
+    <string name="user_name">Robert Downey Junior</string>
+    <string name="user_course">6th Semester MBA Student</string>
+    <string name="institute">IIM Kozhikode</string>
+
+</resources>
