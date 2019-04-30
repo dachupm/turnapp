@@ -60,5 +60,9 @@
     <string name="user_name">Robert Downey Junior</string>
     <string name="user_course">6th Semester MBA Student</string>
     <string name="institute">IIM Kozhikode</string>
+    <string name="password_hint">Password</string>
+    <string name="user_phone_num">+91 9037123456</string>
+    <string name="user_email_id">robert@smartapp.in</string>
+    <string name="country_code">+91\u0020\u0020</string>
 
 </resources>

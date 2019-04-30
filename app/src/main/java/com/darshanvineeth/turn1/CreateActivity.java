@@ -57,11 +57,13 @@ public class CreateActivity extends AppCompatActivity implements TextWatcher {
                     //Create new account on Email valid and Passwords match and go to login page
                     editor.putString("user_credential", userName + userPassword);
                     editor.putString("email", email.getText().toString());
+                    editor.putString("phone", "9037012345");
                     editor.apply();
                     Toast.makeText(CreateActivity.this, "Account created successfully", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(CreateActivity.this, Activity_Login.class);
                     intent.putExtra("Source", "CreateActivity");
                     startActivity(intent);
+                    finish();
                 }
 
 

@@ -25,6 +25,8 @@ public class DrawerActivity extends AppCompatActivity {
 
     private DrawerLayout drawer;
     private Toolbar toolbar;
+    private long backPressedTime;
+    private Toast backToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,6 +109,7 @@ public class DrawerActivity extends AppCompatActivity {
     private BottomNavigationView.OnNavigationItemSelectedListener bnavListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
             Fragment selectedFragment = null;
 
             switch (item.getItemId()) {
@@ -134,7 +137,16 @@ public class DrawerActivity extends AppCompatActivity {
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+
+            if(backPressedTime + 2000 > System.currentTimeMillis()){
+                backToast.cancel();
+                super.onBackPressed();
+                return;
+            }else {
+            backToast = Toast.makeText(getBaseContext(),"Press back again to exit",Toast.LENGTH_SHORT);
+            backToast.show();
+            }
+            backPressedTime = System.currentTimeMillis();
         }
     }
 }

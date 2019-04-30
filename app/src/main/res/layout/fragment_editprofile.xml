@@ -21,6 +21,17 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp">
 
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:background="@color/transparent"
+                android:text="Change picture"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/profile_pic"
                 android:layout_width="150dp"
@@ -28,6 +39,19 @@
                 android:layout_centerHorizontal="true"
                 android:elevation="1dp"
                 android:src="@drawable/ironman"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/change_pic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:alpha="0.5"
+                android:scrollY="100dp"
+                android:src="@drawable/paint_bg"
                 app:civ_border_color="@color/white"
                 app:civ_border_width="2dp" />
 
@@ -174,27 +198,27 @@
                             <RelativeLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="15dp">
+                                android:layout_marginTop="20dp">
 
                                 <ImageView
                                     android:id="@+id/prof_email_icon"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
                                     android:src="@drawable/ic_email_black_24dp"
                                     android:tint="@color/textColor1" />
 
-                                <TextView
-                                    android:id="@+id/profile_email"
+                                <EditText
                                     android:layout_width="wrap_content"
+                                    android:id="@+id/user_email"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="25dp"
                                     android:layout_toEndOf="@+id/prof_email_icon"
-                                    android:text="robert@smartapp.in"
+                                    android:hint="@string/user_email_id"
                                     android:textSize="14sp" />
                             </RelativeLayout>
 
                             <RelativeLayout
-                                android:id="@+id/phone"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="15dp">
@@ -203,30 +227,21 @@
                                     android:id="@+id/phone_icon"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
                                     android:src="@drawable/ic_phone"
                                     android:tint="@color/textColor1" />
 
-                                <TextView
-                                    android:id="@+id/profile_phone"
+                                <EditText
                                     android:layout_width="wrap_content"
+                                    android:id="@+id/user_phone"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="25dp"
                                     android:layout_toEndOf="@+id/phone_icon"
-                                    android:text="+91  9037123456      "
+                                    android:hint="@string/user_phone_num"
+                                    android:inputType="number"
+                                    android:paddingStart="20dp"
                                     android:textSize="14sp" />
                             </RelativeLayout>
-                            <Button
-                                android:id="@+id/logout"
-                                android:layout_width="wrap_content"
-                                android:layout_height="30dp"
-                                android:layout_marginTop="90dp"
-                                android:paddingHorizontal="60dp"
-                                android:text="Logout"
-                                android:textColor="@color/white"
-                                android:layout_marginBottom="20dp"
-                                android:background="@color/colorPrimary"
-                                android:src="@drawable/ic_edit"
-                                />
                         </LinearLayout>
                     </LinearLayout>
                 </ScrollView>
@@ -235,7 +250,7 @@
     </LinearLayout>
 
     <ImageButton
-        android:id="@+id/edit_profile"
+        android:id="@+id/save_profile"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
@@ -244,7 +259,6 @@
         android:layout_marginBottom="10dp"
         android:background="@drawable/scan_button"
         android:elevation="3dp"
-        android:src="@drawable/ic_edit"
+        android:src="@drawable/ic_check"
         android:tint="@color/white" />
-
 </RelativeLayout>

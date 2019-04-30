@@ -67,6 +67,7 @@ public class Activity_Login extends AppCompatActivity {
         String user_entry = user + pass;    //key
 
         SharedPreferences sharedPreferences = getSharedPreferences("userData", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
         String user_credential = sharedPreferences.getString("user_credential", "");
 
         if (user_credential.equals("")) {
@@ -82,6 +83,9 @@ public class Activity_Login extends AppCompatActivity {
             Toast.makeText(Activity_Login.this, "Please enter Password", Toast.LENGTH_SHORT).show();
         } else if (user_entry.equals(user_credential)) {
             Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
+            editor.putString("log_flag","1");    //flags login
+            editor.apply();
+
             Intent intent = new Intent(Activity_Login.this, DrawerActivity.class);
             startActivity(intent);
             finish();

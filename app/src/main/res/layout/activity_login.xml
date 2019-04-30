@@ -125,8 +125,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignBottom="@+id/ImageView_passwordIcon"
                     android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/ImageView_passwordIcon"
-                    android:hint="Password"
+                    android:layout_toEndOf="@+id/ImageView_passwordIcon"
+                    android:hint="@string/password_hint"
                     android:inputType="textPassword"
                     android:paddingStart="15dp"
                     android:textSize="15sp" />

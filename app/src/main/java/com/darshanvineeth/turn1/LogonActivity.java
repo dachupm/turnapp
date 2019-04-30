@@ -91,6 +91,7 @@ public class LogonActivity extends AppCompatActivity {
             Intent intent = new Intent(LogonActivity.this, CreateActivity.class);
             startActivity(intent);
         }
+        finish();
     }
 
     private void sign_phone() {
@@ -104,5 +105,6 @@ public class LogonActivity extends AppCompatActivity {
             Intent intent = new Intent(LogonActivity.this, CreateActivity.class);
             startActivity(intent);
         }
+        finish();
     }
 }
