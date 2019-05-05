@@ -64,5 +64,6 @@
     <string name="user_phone_num">+91 9037123456</string>
     <string name="user_email_id">robert@smartapp.in</string>
     <string name="country_code">+91\u0020\u0020</string>
+    <string name="app_version_quote">App version v1.0</string>
 
 </resources>

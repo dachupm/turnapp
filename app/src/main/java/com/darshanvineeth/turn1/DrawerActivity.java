@@ -74,7 +74,7 @@ public class DrawerActivity extends AppCompatActivity {
                     toolbar.setTitle("Track Activity");
                     break;
                 case R.id.nav_settings:
-                    //  getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
+//                  getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
                     Intent intent1 = new Intent(DrawerActivity.this, SettingsFragment.class);
                     startActivity(intent1);
                     //  toolbar.setTitle("Settings");

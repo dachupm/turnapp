@@ -38,7 +38,7 @@
 
         <activity
             android:name=".SettingsFragment"
-            android:theme="@style/LoginActivityTheme" />
+            android:theme="@style/LoginActivityTheme.NoActionBar" />
 
         <meta-data
             android:name="preloaded_fonts"
